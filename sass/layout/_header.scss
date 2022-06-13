@@ -1,0 +1,19 @@
+.header {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  &__titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 70%;
+    &__title {
+      font-family: $logoAndTitle;
+      font-weight: 500;
+      font-size: 4rem;
+    }
+  }
+}
