@@ -7,4 +7,8 @@
   background: linear-gradient(170deg, $colour-secondary, $colour-primary);
   font-size: medium;
   font-style: normal;
+
+  &__marginBottom {
+    margin-bottom: 60px;
+  }
 }

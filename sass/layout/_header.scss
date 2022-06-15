@@ -4,6 +4,11 @@
   justify-content: center;
   align-items: center;
   height: 80px;
+  &__arrow {
+    position: absolute;
+    left: 1em;
+    color: black;
+  }
   &__titleContainer {
     display: flex;
     justify-content: center;
