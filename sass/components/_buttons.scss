@@ -2,18 +2,40 @@
   width: 60%;
   height: 50px;
   color: white;
+  position: relative;
   border-radius: 30px;
   border: transparent;
   background: linear-gradient(170deg, $colour-secondary, $colour-primary);
   font-size: medium;
   font-style: normal;
+  z-index: 1;
   box-shadow: 0px 2px 5px rgb(189, 189, 189);
   &__marginBottom {
     margin-bottom: 60px;
   }
 
-  &:active {
-    box-shadow: 0px 10px 10px rgb(146, 146, 146);
-    background: linear-gradient(170deg, #9d78c9, #fc9fe2);
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px;
+    background: linear-gradient(
+      170deg,
+      $colour-secondary-lighten,
+      $colour-primary-lighten
+    );
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+    box-shadow: 0px 10px 10px rgb(151, 151, 151);
   }
 }
