@@ -1,0 +1,25 @@
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  margin: auto;
+  border: 10px solid #eaf0f6;
+  border-radius: 50%;
+  border-top: 10px solid $colour-primary;
+  width: 100px;
+  height: 100px;
+  visibility: hidden;
+  opacity: 1;
+  z-index: 51;
+  animation: spinner 1s linear 0s 3;
+}
+@keyframes spinner {
+  0% {
+    visibility: visible;
+    transform: rotate(0deg);
+  }
+  100% {
+    visibility: visible;
+    transform: rotate(360deg);
+  }
+}
