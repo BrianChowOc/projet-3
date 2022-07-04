@@ -1,0 +1,14 @@
+.selectDish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: $colour-tertiary;
+  color: white;
+
+  & > i {
+    opacity: 0;
+  }
+}

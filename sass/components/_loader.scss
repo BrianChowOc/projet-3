@@ -11,7 +11,7 @@
   visibility: hidden;
   opacity: 1;
   z-index: 51;
-  animation: spinner 1s linear 0s 3;
+  animation: spinner 0.75s linear 0s 3;
 }
 @keyframes spinner {
   0% {

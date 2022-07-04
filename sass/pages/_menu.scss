@@ -40,32 +40,48 @@
       height: 320px;
       &__title {
         align-self: flex-start;
-
         font-weight: bold;
         border-bottom: 3px solid $colour-tertiary;
       }
       &__dish {
+        text-decoration: none;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 80px;
+        color: black;
         width: 90%;
+        height: 80px;
         border-radius: 20px;
         background-color: white;
+        overflow: hidden;
         box-shadow: 0px 2px 5px rgb(189, 189, 189);
-        padding: 10px;
-        &__title {
-          font-weight: 900;
-          font-size: medium;
-        }
 
         &__description {
           display: flex;
-          justify-content: space-between;
+          width: 100%;
+          flex-direction: column;
+          justify-content: space-around;
           font-size: medium;
-
+          &__title {
+            display: flex;
+            font-weight: bold;
+          }
+          &__text {
+            display: flex;
+            justify-content: space-between;
+          }
           &__price {
             font-weight: 900;
+            font-size: small;
+          }
+        }
+
+        &:hover {
+          & .selectDish {
+            animation: selectdish 1s;
+            animation-fill-mode: forwards;
+            & > i {
+              animation: checkRotation 0.75s 0s;
+              animation-fill-mode: forwards;
+            }
           }
         }
       }
@@ -88,7 +104,30 @@
 
     & i {
       display: flex;
+
       align-items: center;
     }
+  }
+}
+
+@keyframes selectdish {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 80px;
+  }
+}
+
+@keyframes checkRotation {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
   }
 }
