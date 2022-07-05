@@ -61,16 +61,26 @@
           justify-content: space-around;
           font-size: medium;
           &__title {
+            padding-left: 10px;
             display: flex;
             font-weight: bold;
           }
           &__text {
             display: flex;
             justify-content: space-between;
-          }
-          &__price {
-            font-weight: 900;
-            font-size: small;
+            align-items: center;
+            &__complement {
+              padding-left: 10px;
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+            }
+            &__price {
+              font-weight: 900;
+              font-size: small;
+              padding-right: 10px;
+            }
           }
         }
 
