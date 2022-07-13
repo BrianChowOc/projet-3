@@ -70,7 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 350px;
+    min-width: 250px;
     max-width: 40%;
     position: relative;
     margin: 10px;
@@ -113,6 +113,7 @@
         justify-content: space-around;
         align-items: center;
         width: 80%;
+        font-size: 1.5rem;
         &__padding {
           margin-right: 10px;
         }
@@ -179,6 +180,15 @@
 
         & h3 {
           font-size: 2rem;
+          @media screen and (max-width: 280px) {
+            font-size: 1.5rem;
+          }
+        }
+
+        & > div {
+          @media screen and (max-width: 280px) {
+            font-size: 1.5rem;
+          }
         }
       }
     }
