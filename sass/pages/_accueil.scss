@@ -3,10 +3,10 @@
   justify-content: center;
   height: 60px;
   background-color: rgb(237, 237, 237);
-  color: rgb(59, 59, 59);
   font-weight: 900;
+  color: rgb(59, 59, 59);
   box-shadow: inset 0px 3px 5px rgb(178, 178, 178);
-
+  opacity: 0;
   &__container {
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@
   height: 350px;
   background-color: rgb(246, 246, 246);
   text-align: center;
-
+  opacity: 0;
   &__title {
     font-weight: 900;
     font-size: 2.5rem;
@@ -45,18 +45,27 @@
 }
 
 .functioning {
-  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding-bottom: 50px;
+  opacity: 0;
+
+  &__global {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+  }
+
   &__title {
     align-self: flex-start;
     padding-left: 20px;
     font-size: 2.5rem;
     font-weight: 900;
   }
+
   &__container {
     display: flex;
     justify-content: center;
@@ -64,6 +73,7 @@
     min-width: 350px;
     max-width: 40%;
     position: relative;
+    margin: 10px;
     &__number {
       display: flex;
       align-items: center;
@@ -90,9 +100,13 @@
       border: transparent;
       background-color: rgb(246, 246, 246);
       height: 70px;
-      &--pink {
+      &:hover {
         background-color: #f1e6ff;
+        & i {
+          color: $colour-primary;
+        }
       }
+
       &__text {
         display: flex;
         font-weight: 900;
@@ -104,9 +118,6 @@
         }
         &__icon {
           color: rgb(151, 151, 151);
-          &--pink {
-            color: $colour-primary;
-          }
         }
       }
     }
@@ -118,8 +129,15 @@
   flex-direction: column;
   align-items: center;
   background-color: rgb(246, 246, 246);
-  height: 1500px;
   justify-content: space-around;
+  opacity: 0;
+
+  &__global {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+  }
 
   & a {
     color: black;
@@ -139,12 +157,11 @@
     flex-direction: column;
     border-radius: 20px;
     height: 300px;
-    width: 500px;
-    background-color: white;
+    width: 90%;
+    margin: 10px;
+    max-width: 450px;
+    margin-bottom: 50px;
     box-shadow: 0px 2px 5px rgb(189, 189, 189);
-    @media (max-width: 412px) {
-      width: 350px;
-    }
 
     &__main {
       display: flex;
@@ -159,11 +176,20 @@
         font-weight: bolder;
         height: 100%;
         padding-left: 20px;
+
+        & h3 {
+          font-size: 2rem;
+        }
       }
+    }
+    & a {
+      display: inline-block;
+      height: 70%;
+      width: 100%;
     }
 
     & img {
-      height: 70%;
+      height: 100%;
       width: 100%;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;

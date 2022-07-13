@@ -3,6 +3,10 @@
   flex-direction: column;
   align-items: center;
 
+  &__image {
+    object-fit: cover;
+  }
+
   & button {
     align-items: center;
   }
@@ -46,12 +50,21 @@
           border-bottom: 3px solid $colour-tertiary;
         }
       }
+
+      &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 80%;
+      }
       &__dish {
         text-decoration: none;
         display: flex;
         color: black;
         width: 90%;
+        max-width: 450px;
         height: 80px;
+        margin: 5px;
         border-radius: 20px;
         background-color: white;
         overflow: hidden;
@@ -123,7 +136,17 @@
     font-weight: 900;
     font-family: $logoAndTitle;
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2rem;
+    @media screen and (min-width: 390px) {
+      font-size: 3rem;
+    }
+
+    & > div {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
 
     & i {
       display: flex;

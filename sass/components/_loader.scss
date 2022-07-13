@@ -1,18 +1,19 @@
 .loader {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 45%;
-  margin: auto;
-  border: 10px solid #eaf0f6;
+  border: 5px solid #eaf0f6;
   border-radius: 50%;
-  border-top: 10px solid $colour-primary;
-  width: 100px;
-  height: 100px;
+  border-top: 5px solid $colour-primary;
+  width: 50px;
+  margin: 0 auto;
+  height: 50px;
   visibility: hidden;
   opacity: 1;
   z-index: 51;
-  animation: spinner 0.75s linear 0s 3;
+  animation: spinner 0.75s linear 0s 4;
 }
+
 @keyframes spinner {
   0% {
     visibility: visible;
@@ -21,5 +22,55 @@
   100% {
     visibility: visible;
     transform: rotate(360deg);
+  }
+}
+
+.header {
+  animation: vanish 0.1s linear 3s;
+  animation-fill-mode: forwards;
+}
+
+.localisation {
+  animation: vanish 0.2s 3s;
+  animation-fill-mode: forwards;
+}
+
+.exploration {
+  animation: vanish 0.5s 3s;
+  animation-fill-mode: forwards;
+}
+
+.functioning {
+  animation: vanish 0.7s 3s;
+  animation-fill-mode: forwards;
+}
+
+.restaurant {
+  animation: vanish 1s 3s;
+  animation-fill-mode: forwards;
+}
+
+.footer {
+  animation: vanish 1.2s 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spinner {
+  0% {
+    visibility: visible;
+    transform: rotate(0deg);
+  }
+  100% {
+    visibility: visible;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes vanish {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
