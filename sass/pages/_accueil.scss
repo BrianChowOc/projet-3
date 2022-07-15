@@ -17,6 +17,7 @@
   &__div {
     padding-left: 25px;
     box-shadow: inset;
+    font-family: "Roboto", sans-serif;
   }
 }
 
@@ -25,7 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 350px;
+  height: 375px;
   background-color: rgb(246, 246, 246);
   text-align: center;
   opacity: 0;
@@ -109,11 +110,13 @@
 
       &__text {
         display: flex;
+        font-family: "Roboto", sans-serif;
         font-weight: 900;
         justify-content: space-around;
         align-items: center;
         width: 80%;
         font-size: 1.5rem;
+
         &__padding {
           margin-right: 10px;
         }
@@ -181,13 +184,13 @@
         & h3 {
           font-size: 2rem;
           @media screen and (max-width: 280px) {
-            font-size: 1.5rem;
+            font-size: small;
           }
         }
 
         & > div {
           @media screen and (max-width: 280px) {
-            font-size: 1.5rem;
+            font-size: small;
           }
         }
       }

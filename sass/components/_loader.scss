@@ -50,11 +50,6 @@
   animation-fill-mode: forwards;
 }
 
-.footer {
-  animation: vanish 1.2s 3s;
-  animation-fill-mode: forwards;
-}
-
 @keyframes spinner {
   0% {
     visibility: visible;

@@ -44,6 +44,7 @@
       height: 320px;
       &__title {
         align-self: flex-start;
+        font-family: "Roboto", sans-serif;
         font-weight: bold;
         &__border {
           width: 50px;
@@ -90,6 +91,9 @@
             padding-left: 10px;
             display: flex;
             font-weight: bold;
+            @media screen and (max-width: 280px) {
+              font-size: small;
+            }
           }
           &__text {
             display: flex;
@@ -101,6 +105,9 @@
               display: -webkit-box;
               -webkit-line-clamp: 1;
               -webkit-box-orient: vertical;
+              @media screen and (max-width: 280px) {
+                font-size: xx-small;
+              }
             }
             &__price {
               font-weight: 900;
