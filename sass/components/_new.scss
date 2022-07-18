@@ -1,15 +1,16 @@
 .new {
   width: 100px;
-  height: 40px;
-  font-weight: 900;
-  font-family: "Roboto", sans-serif;
+  height: 30px;
+  font-weight: bold;
+  font-family: "Roboto-bold", sans-serif;
   background-color: $colour-tertiary;
   border-radius: 2px;
   color: #17765e;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 900;
+  font-size: medium;
+  font-weight: bold;
   position: absolute;
   right: 10px;
   top: 20px;
