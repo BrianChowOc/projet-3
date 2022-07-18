@@ -125,6 +125,7 @@
         &__icon {
           color: rgb(151, 151, 151);
         }
+        @include for-size(280px, small);
       }
     }
   }
@@ -186,15 +187,11 @@
 
         & h3 {
           font-size: 2rem;
-          @media screen and (max-width: 280px) {
-            font-size: small;
-          }
+          @include for-size(280px, medium);
         }
 
         & > div {
-          @media screen and (max-width: 280px) {
-            font-size: small;
-          }
+          @include for-size(280px, small);
         }
       }
     }

@@ -94,9 +94,7 @@
             overflow: hidden;
             -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
-            @media screen and (max-width: 280px) {
-              font-size: small;
-            }
+            @include for-size(280px, small);
           }
           &__text {
             display: flex;
@@ -108,9 +106,7 @@
               display: -webkit-box;
               -webkit-line-clamp: 1;
               -webkit-box-orient: vertical;
-              @media screen and (max-width: 280px) {
-                font-size: xx-small;
-              }
+              @include for-size(280px, xx-small);
             }
             &__price {
               font-weight: 900;
@@ -147,9 +143,7 @@
     font-family: $logoAndTitle;
     font-weight: 500;
     font-size: 2rem;
-    @media screen and (min-width: 390px) {
-      font-size: 3rem;
-    }
+    @include for-size(390px, 3rem);
 
     & > div {
       overflow: hidden;
@@ -185,16 +179,6 @@
   100% {
     opacity: 1;
     transform: rotate(360deg);
-  }
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
   }
 }
 
