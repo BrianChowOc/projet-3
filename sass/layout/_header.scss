@@ -20,9 +20,7 @@
       font-family: $logoAndTitle;
       font-weight: 500;
       font-size: 3rem;
-      @media screen and (min-width: 390px) {
-        font-size: 4rem;
-      }
+      @include for-size(390px, 4rem);
     }
   }
 }

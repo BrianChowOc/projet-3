@@ -10,11 +10,10 @@
   font-size: medium;
   font-style: normal;
   z-index: 1;
-  @media screen and (max-width: 280px) {
-    font-size: 1.5rem;
-  }
+  @include for-size(280px, 1.5rem);
   box-shadow: 0px 2px 5px rgb(189, 189, 189);
   &__marginBottom {
+    margin-top: 60px;
     margin-bottom: 60px;
   }
 
