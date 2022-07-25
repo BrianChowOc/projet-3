@@ -8,6 +8,8 @@
   justify-content: space-around;
   font-weight: bold;
   padding-left: 20px;
+  @include for-size(280px, medium);
+
   &__title {
     font-family: $logoAndTitle;
     font-weight: 500;
