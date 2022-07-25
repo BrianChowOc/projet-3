@@ -16,7 +16,6 @@
 
   &__div {
     padding-left: 25px;
-    box-shadow: inset;
     font-family: "Roboto", sans-serif;
   }
 }
@@ -32,7 +31,7 @@
   opacity: 0;
   &__title {
     font-weight: 900;
-    font-size: bold;
+    font-size: large;
 
     width: 60%;
   }
